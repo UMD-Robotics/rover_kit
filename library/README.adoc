@@ -1,0 +1,9 @@
+= Elegoo Rover Library for Arduino =
+
+--WORK IN PROGRESS--
+Robotics club members: please feel free to make contributions to the library. Make your own git branch before making changes and always put in pull requests to have your code reviewed by other contributers before pushing to the master.
+
+See the TODO list on our Github page: https://github.com/bulldog-bots/rover_kit
+
+== License ==
+See LICENSE document.
