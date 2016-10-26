@@ -104,7 +104,7 @@ void Drive::write(const double& leftspeed, const double& rightspeed) const{
     digitalWrite(lIn1, LOW);
     digitalWrite(lIn2, HIGH);
     if (leftspeed > 1)
-      analogWrite(ENA, 1);
+      analogWrite(ENA, 255);
     else
       analogWrite(ENA, leftspeed * 255);
   }
@@ -112,7 +112,7 @@ void Drive::write(const double& leftspeed, const double& rightspeed) const{
     digitalWrite(lIn1, HIGH);
     digitalWrite(lIn2, LOW);
     if (leftspeed < -1)
-      analogWrite(ENA, -1);
+      analogWrite(ENA, 255);
     else
       analogWrite(ENA, leftspeed * -255);
   }
@@ -128,7 +128,7 @@ void Drive::write(const double& leftspeed, const double& rightspeed) const{
     digitalWrite(rIn1, LOW);
     digitalWrite(rIn2, HIGH);
     if (rightspeed > 1)
-      analogWrite(ENB, 1);
+      analogWrite(ENB, 255);
     else
       analogWrite(ENB, rightspeed * 255);
   }
@@ -136,7 +136,7 @@ void Drive::write(const double& leftspeed, const double& rightspeed) const{
     digitalWrite(rIn1, HIGH);
     digitalWrite(rIn2, LOW);
     if (rightspeed < -1)
-      analogWrite(ENB, -1);
+      analogWrite(ENB, 255);
     else
       analogWrite(ENB, rightspeed * -255);
   }
